@@ -3,35 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prapun's About</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>About Prapun's</title>
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav>
       <div class="nav-container">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="115"
-          height="33"
-          viewBox="0 0 115 33"
-          fill="none"
-        >
-          <g clip-path="url(#clip0_12_5892)">
-            <path
-              d="M24.4175 9.64038C24.4175 4.89869 21.0501 0 13.0827 0C3.72406 0 -0.000220517 6.71861 -0.000220517 11.2423C-0.000220517 12.2307 0.176698 13.1494 0.413589 13.9402C0.827398 15.3182 2.5486 15.8531 3.73606 14.9984C4.43773 14.4926 4.76158 13.6204 4.52469 12.8035C4.38676 12.3296 4.27581 11.7656 4.27581 11.1812C4.27581 8.10536 7.31941 3.89569 13.0857 3.89569C18.0724 3.89569 19.4968 7.12853 19.4968 9.67236C19.4968 14.5071 14.5101 17.6149 10.6869 15.545L12.6629 10.8672C13.1427 9.75086 13.7904 9.02405 14.3212 8.57343C14.8819 8.09955 15.0768 7.34076 14.8399 6.65756C14.5191 5.73306 13.4966 5.22139 12.537 5.5063C10.264 6.18368 8.66279 8.06176 7.93712 9.79737L0.173699 29.8224C-0.459009 31.3429 0.698457 33 2.38668 33C3.36123 33 4.23983 32.4244 4.60266 31.5464L9.35847 18.7139C18.0695 22.1996 24.4175 16.17 24.4175 9.64038Z"
-              fill="white"
-            />
-            <path
-              d="M114.544 18.5308C114.028 18.1499 113.285 18.2837 112.946 18.8186C110.814 22.2055 108.79 24.1156 107.584 24.1156C107.033 24.1156 106.418 23.7086 107.908 20.0978L109.494 16.362C110.175 14.7281 110.466 13.6612 110.466 12.8152C110.466 11.1522 109.399 10.0824 107.356 10.0824C104.604 10.0824 102.208 11.9982 102.046 12.1552C102.373 11.3557 101.767 10.4923 100.879 10.4923H98.4206C97.9108 10.4923 97.449 10.7917 97.2571 11.2511L94.3095 18.3127C92.0425 22.0427 90.0634 24.1156 88.7321 24.1156C88.0844 24.1156 87.5326 23.5806 88.9899 20.0978L91.6557 13.6728C92.2884 12.1494 91.131 10.4923 89.4367 10.4923C88.4622 10.4923 87.5866 11.065 87.2208 11.943L84.3601 18.8128C82.417 21.9846 81.1546 23.6795 79.8921 23.6795C79.2444 23.6795 78.7916 23.2405 80.12 20.1007L82.7858 13.6757C83.4185 12.1523 82.261 10.4952 80.5668 10.4952C79.5923 10.4952 78.7167 11.0679 78.3508 11.943L75.6191 18.4813C73.4811 21.9032 71.469 23.633 68.9472 24.7203C70.0477 23.4963 73.3192 18.5046 73.3192 14.4519C73.3192 12.1901 72.2816 10.0882 69.5949 10.0882C67.166 10.0882 65.4508 11.8151 65.4508 11.847C65.7147 11.1987 65.2229 10.4981 64.5032 10.4981H61.5706C61.1568 10.4981 60.7819 10.7423 60.626 11.1144L57.6274 18.304C55.3514 22.0136 53.2134 24.1243 51.945 24.1243C51.3633 24.1243 50.8115 23.6533 52.2689 20.1065L54.9526 13.6873C55.5883 12.1639 54.4339 10.4981 52.7366 10.4981C51.7681 10.4981 50.8955 11.065 50.5267 11.9343L50.2298 12.6349C50.2298 12.6349 49.5161 10.0911 46.3766 10.0911C42.2175 10.0911 39.6147 14.4461 38.3523 18.3215C35.9804 22.2259 34.4391 24.1243 33.5545 24.1243C33.1347 24.1243 32.2921 23.7173 33.8124 20.1065L34.718 17.8766C35.0088 17.1557 35.1078 16.6847 35.1078 16.3067C35.1078 13.9519 31.1256 12.193 29.7972 11.0621L30.274 9.90501C30.5949 9.13169 30.268 8.24498 29.5154 7.84088C28.9516 7.53852 28.2559 7.55887 27.7312 7.91646C26.6727 8.63746 25.6831 9.90501 25.6831 11.1231C25.6831 11.9081 25.86 12.2831 26.4418 12.8791C23.719 18.7343 21.1222 22.8567 19.518 24.7203C19.0922 25.2145 19.377 26.2059 20.1507 26.7059C20.9243 27.206 21.7429 27.2176 22.0998 26.828C23.86 24.9005 26.6697 20.153 29.1915 14.8124C30.0971 15.5654 30.1211 15.5479 30.1211 16.1759C30.1211 16.3329 30.0881 16.6469 29.8302 17.2748L28.7927 19.8187C26.4598 25.3773 29.1495 27.1972 31.6744 27.1972C33.9173 27.1972 35.7735 25.7291 37.4647 23.601C37.6416 25.6186 38.859 27.1972 41.099 27.1972C43.9477 27.1972 46.1847 24.5924 46.1847 24.5924C46.1847 24.5924 46.6045 27.1972 49.9749 27.1972C51.6871 27.1972 53.2434 26.5198 54.6678 25.4035L52.8236 29.8225C52.1879 31.3429 53.3424 33.0059 55.0366 33.0059C56.0081 33.0059 56.8837 32.4332 57.2496 31.561L63.4477 16.7108C64.4852 15.2659 65.9096 14.074 67.106 14.074C67.7867 14.074 68.1106 14.481 68.1106 15.3939C68.1106 18.2517 64.938 24.4354 63.1568 24.4354C62.9889 24.4354 62.833 24.3801 62.6891 24.3045C62.2543 24.069 61.7205 24.1039 61.3577 24.4295L61.3007 24.4819C60.7699 24.9558 60.8359 25.7843 61.4386 26.1681C62.2303 26.6739 63.5647 27.1972 65.6847 27.1972C69.2081 27.1972 72.0538 25.764 74.2877 23.6795C74.3627 26.1477 75.9729 27.1972 77.958 27.1972C79.9431 27.1972 81.7153 26.0663 83.2056 24.3714C83.5624 26.3483 85.0827 27.1972 86.8669 27.1972C88.4532 27.1972 89.9615 26.5169 91.3589 25.4122C91.083 26.0721 91.5837 26.7902 92.3154 26.7902H95.2361C95.6559 26.7902 96.0367 26.5431 96.1926 26.1652L100.304 16.3358C101.665 14.8299 103.152 14.106 103.932 14.106C104.418 14.106 104.808 14.356 104.808 14.7979C104.808 15.2689 104.289 16.4608 103.674 17.9697L103.188 19.1326C100.888 24.6912 102.283 27.203 105.65 27.203C109.348 27.203 112.34 24.0225 114.853 19.9553C115.141 19.4873 115.021 18.8855 114.574 18.554L114.553 18.5395L114.544 18.5308ZM46.7634 20.9438C46.7634 20.9438 45.2731 23.2056 43.4919 23.2056C42.8442 23.2056 42.4544 22.8596 42.4544 22.0427C42.4544 20.0338 44.8503 14.1612 47.4081 14.1612C48.8325 14.1612 48.8654 15.9201 48.8654 15.9201L46.7604 20.9438H46.7634Z"
-              fill="white"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_12_5892">
-              <rect width="115" height="33" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
+        <a href="./index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="115"
+            height="33"
+            viewBox="0 0 115 33"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_12_5892)">
+              <path
+                d="M24.4175 9.64038C24.4175 4.89869 21.0501 0 13.0827 0C3.72406 0 -0.000220517 6.71861 -0.000220517 11.2423C-0.000220517 12.2307 0.176698 13.1494 0.413589 13.9402C0.827398 15.3182 2.5486 15.8531 3.73606 14.9984C4.43773 14.4926 4.76158 13.6204 4.52469 12.8035C4.38676 12.3296 4.27581 11.7656 4.27581 11.1812C4.27581 8.10536 7.31941 3.89569 13.0857 3.89569C18.0724 3.89569 19.4968 7.12853 19.4968 9.67236C19.4968 14.5071 14.5101 17.6149 10.6869 15.545L12.6629 10.8672C13.1427 9.75086 13.7904 9.02405 14.3212 8.57343C14.8819 8.09955 15.0768 7.34076 14.8399 6.65756C14.5191 5.73306 13.4966 5.22139 12.537 5.5063C10.264 6.18368 8.66279 8.06176 7.93712 9.79737L0.173699 29.8224C-0.459009 31.3429 0.698457 33 2.38668 33C3.36123 33 4.23983 32.4244 4.60266 31.5464L9.35847 18.7139C18.0695 22.1996 24.4175 16.17 24.4175 9.64038Z"
+                fill="white"
+              />
+              <path
+                d="M114.544 18.5308C114.028 18.1499 113.285 18.2837 112.946 18.8186C110.814 22.2055 108.79 24.1156 107.584 24.1156C107.033 24.1156 106.418 23.7086 107.908 20.0978L109.494 16.362C110.175 14.7281 110.466 13.6612 110.466 12.8152C110.466 11.1522 109.399 10.0824 107.356 10.0824C104.604 10.0824 102.208 11.9982 102.046 12.1552C102.373 11.3557 101.767 10.4923 100.879 10.4923H98.4206C97.9108 10.4923 97.449 10.7917 97.2571 11.2511L94.3095 18.3127C92.0425 22.0427 90.0634 24.1156 88.7321 24.1156C88.0844 24.1156 87.5326 23.5806 88.9899 20.0978L91.6557 13.6728C92.2884 12.1494 91.131 10.4923 89.4367 10.4923C88.4622 10.4923 87.5866 11.065 87.2208 11.943L84.3601 18.8128C82.417 21.9846 81.1546 23.6795 79.8921 23.6795C79.2444 23.6795 78.7916 23.2405 80.12 20.1007L82.7858 13.6757C83.4185 12.1523 82.261 10.4952 80.5668 10.4952C79.5923 10.4952 78.7167 11.0679 78.3508 11.943L75.6191 18.4813C73.4811 21.9032 71.469 23.633 68.9472 24.7203C70.0477 23.4963 73.3192 18.5046 73.3192 14.4519C73.3192 12.1901 72.2816 10.0882 69.5949 10.0882C67.166 10.0882 65.4508 11.8151 65.4508 11.847C65.7147 11.1987 65.2229 10.4981 64.5032 10.4981H61.5706C61.1568 10.4981 60.7819 10.7423 60.626 11.1144L57.6274 18.304C55.3514 22.0136 53.2134 24.1243 51.945 24.1243C51.3633 24.1243 50.8115 23.6533 52.2689 20.1065L54.9526 13.6873C55.5883 12.1639 54.4339 10.4981 52.7366 10.4981C51.7681 10.4981 50.8955 11.065 50.5267 11.9343L50.2298 12.6349C50.2298 12.6349 49.5161 10.0911 46.3766 10.0911C42.2175 10.0911 39.6147 14.4461 38.3523 18.3215C35.9804 22.2259 34.4391 24.1243 33.5545 24.1243C33.1347 24.1243 32.2921 23.7173 33.8124 20.1065L34.718 17.8766C35.0088 17.1557 35.1078 16.6847 35.1078 16.3067C35.1078 13.9519 31.1256 12.193 29.7972 11.0621L30.274 9.90501C30.5949 9.13169 30.268 8.24498 29.5154 7.84088C28.9516 7.53852 28.2559 7.55887 27.7312 7.91646C26.6727 8.63746 25.6831 9.90501 25.6831 11.1231C25.6831 11.9081 25.86 12.2831 26.4418 12.8791C23.719 18.7343 21.1222 22.8567 19.518 24.7203C19.0922 25.2145 19.377 26.2059 20.1507 26.7059C20.9243 27.206 21.7429 27.2176 22.0998 26.828C23.86 24.9005 26.6697 20.153 29.1915 14.8124C30.0971 15.5654 30.1211 15.5479 30.1211 16.1759C30.1211 16.3329 30.0881 16.6469 29.8302 17.2748L28.7927 19.8187C26.4598 25.3773 29.1495 27.1972 31.6744 27.1972C33.9173 27.1972 35.7735 25.7291 37.4647 23.601C37.6416 25.6186 38.859 27.1972 41.099 27.1972C43.9477 27.1972 46.1847 24.5924 46.1847 24.5924C46.1847 24.5924 46.6045 27.1972 49.9749 27.1972C51.6871 27.1972 53.2434 26.5198 54.6678 25.4035L52.8236 29.8225C52.1879 31.3429 53.3424 33.0059 55.0366 33.0059C56.0081 33.0059 56.8837 32.4332 57.2496 31.561L63.4477 16.7108C64.4852 15.2659 65.9096 14.074 67.106 14.074C67.7867 14.074 68.1106 14.481 68.1106 15.3939C68.1106 18.2517 64.938 24.4354 63.1568 24.4354C62.9889 24.4354 62.833 24.3801 62.6891 24.3045C62.2543 24.069 61.7205 24.1039 61.3577 24.4295L61.3007 24.4819C60.7699 24.9558 60.8359 25.7843 61.4386 26.1681C62.2303 26.6739 63.5647 27.1972 65.6847 27.1972C69.2081 27.1972 72.0538 25.764 74.2877 23.6795C74.3627 26.1477 75.9729 27.1972 77.958 27.1972C79.9431 27.1972 81.7153 26.0663 83.2056 24.3714C83.5624 26.3483 85.0827 27.1972 86.8669 27.1972C88.4532 27.1972 89.9615 26.5169 91.3589 25.4122C91.083 26.0721 91.5837 26.7902 92.3154 26.7902H95.2361C95.6559 26.7902 96.0367 26.5431 96.1926 26.1652L100.304 16.3358C101.665 14.8299 103.152 14.106 103.932 14.106C104.418 14.106 104.808 14.356 104.808 14.7979C104.808 15.2689 104.289 16.4608 103.674 17.9697L103.188 19.1326C100.888 24.6912 102.283 27.203 105.65 27.203C109.348 27.203 112.34 24.0225 114.853 19.9553C115.141 19.4873 115.021 18.8855 114.574 18.554L114.553 18.5395L114.544 18.5308ZM46.7634 20.9438C46.7634 20.9438 45.2731 23.2056 43.4919 23.2056C42.8442 23.2056 42.4544 22.8596 42.4544 22.0427C42.4544 20.0338 44.8503 14.1612 47.4081 14.1612C48.8325 14.1612 48.8654 15.9201 48.8654 15.9201L46.7604 20.9438H46.7634Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_12_5892">
+                <rect width="115" height="33" fill="white" />
+              </clipPath>
+            </defs></svg
+        ></a>
 
         <ul>
           <li><a href="./index.html#home">Home</a></li>
@@ -41,7 +43,7 @@
         </ul>
 
         <div class="social-icons">
-          <a href=""
+          <a href="https://twitter.com/PrapunKumar"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
@@ -67,7 +69,7 @@
               </defs>
             </svg>
           </a>
-          <a href=""
+          <a href="https://www.linkedin.com/in/prapunkumar"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -81,7 +83,7 @@
               />
             </svg>
           </a>
-          <a href=""
+          <a href="https://www.instagram.com/prapunkumar/"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -95,7 +97,7 @@
               />
             </svg>
           </a>
-          <a href=""
+          <a href="https://www.facebook.com/prapunkumarillapani"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="12"
@@ -136,19 +138,35 @@
 
     <div id="about-wrapper">
       <div class="about-container">
-        <div class="heading-container">
-          <h2>
+        <div
+          class="heading-container"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <h2 class="mobile-text">
             “From HR to <br />&nbsp;&nbsp;Empowering <br />&nbsp;&nbsp;Dreams
             Prapun’s <br />&nbsp;&nbsp;<span>Entrepreneurial <br /></span
             >&nbsp;&nbsp;<span>Journey</span>”
+          </h2>
+          <h2 class="desktop-text">
+            “From HR to Empowering &nbsp;&nbsp;Dreams Prapun’s &nbsp;&nbsp;<span
+              >Entrepreneurial Journey</span
+            >”
           </h2>
         </div>
 
         <div class="about-layout">
           <div class="layout">
             <div class="description">
-              <p class="title">A Path Unveiled</p>
-              <p class="content">
+              <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                A Path Unveiled
+              </p>
+              <p
+                class="content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 Prapun’s story isn't just about a career shift, it's a journey
                 with over 100,000 voices. He is an HR professional, who
                 witnessed the hopes and dreams of students and seasoned
@@ -158,16 +176,33 @@
               </p>
             </div>
             <div class="img">
-              <img src="./assets/images/about-1.png" alt="" />
+              <img
+                src="./assets/images/about-1.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
             </div>
           </div>
           <div class="layout">
             <div class="img">
-              <img src="./assets/images/about-2.png" alt="" />
+              <img
+                src="./assets/images/about-2.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              />
             </div>
             <div class="description">
-              <p class="title">A Spark Ignited</p>
-              <p class="content">
+              <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                A Spark Ignited
+              </p>
+              <p
+                class="content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 Prapun’s story isn't just about a career shift, it's a journey
                 with over 100,000 voices. He is an HR professional, who
                 witnessed the hopes and dreams of students and seasoned
@@ -179,8 +214,15 @@
           </div>
           <div class="layout">
             <div class="description">
-              <p class="title">Immersed in the Startup World</p>
-              <p class="content">
+              <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                Immersed in the Startup World
+              </p>
+              <p
+                class="content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 Prapun Immersed himself in the vibrant Vizag startup ecosystem
                 for over eight years, and had collaborated with over 1,000
                 diverse individuals, co-founders, students and industry leaders
@@ -188,16 +230,33 @@
               </p>
             </div>
             <div class="img">
-              <img src="./assets/images/about-3.png" alt="" />
+              <img
+                src="./assets/images/about-3.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
             </div>
           </div>
           <div class="layout">
             <div class="img">
-              <img src="./assets/images/about-4.png" alt="" />
+              <img
+                src="./assets/images/about-4.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              />
             </div>
             <div class="description">
-              <p class="title">Learning and Growth</p>
-              <p class="content">
+              <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                Learning and Growth
+              </p>
+              <p
+                class="content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 To fuel his thirst for knowledge, he absorbed insights from over
                 200 sessions by thought leaders at APIS, NASSCOM, T-HUB, A-HUB,
                 IIMV, Wadhwani Foundation, Villgro and countless others. Boot
@@ -211,8 +270,15 @@
           </div>
           <div class="layout">
             <div class="description">
-              <p class="title">Evolution and Transformation</p>
-              <p class="content">
+              <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                Evolution and Transformation
+              </p>
+              <p
+                class="content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 Prapun invested in upgrading his skills, exploring content
                 creation, growth hacking, generative AI and strategic thinking.
                 This evolution transformed him into an educator, facilitator,
@@ -221,16 +287,35 @@
               </p>
             </div>
             <div class="img">
-              <img src="./assets/images/about-5.png" alt="" />
+              <img
+                src="./assets/images/about-5.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
             </div>
           </div>
           <div class="layout">
             <div class="img">
-              <img src="./assets/images/about-6.png" alt="" />
+              <img
+                src="./assets/images/about-6.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              />
             </div>
             <div class="description">
-              <p class="title">Journey Inwards</p>
-              <p class="content">
+              <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                Journey Inwards
+              </p>
+              <p
+                class="content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 The ultimate lessons, came from exploring Vipassana and inner
                 engineering awakened a deep sense of mindfulness which grounding
                 him in the present moment.
@@ -239,8 +324,15 @@
           </div>
           <div class="layout">
             <div class="description">
-              <p class="title">Gratitude and Acknowledgment</p>
-              <p class="content">
+              <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                Gratitude and Acknowledgment
+              </p>
+              <p
+                class="content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 This journey wouldn't be complete without mentioning the
                 incredible individuals who shaped him - Soma Sundar sir, Irfan
                 Ansari, Dheeraj Kota, and Rohini Kumar Barla. He learned a lot
@@ -248,16 +340,35 @@
               </p>
             </div>
             <div class="img">
-              <img src="./assets/images/about-7.png" alt="" />
+              <img
+                src="./assets/images/about-7.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
             </div>
           </div>
           <div class="layout">
             <div class="img">
-              <img src="./assets/images/about-8.png" alt="" />
+              <img
+                src="./assets/images/about-8.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              />
             </div>
             <div class="description">
-              <p class="title">A Bridge to Dreams</p>
-              <p class="content">
+              <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                A Bridge to Dreams
+              </p>
+              <p
+                class="content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 Today, Prapun is not just an ex-HR professional or an
                 entrepreneur. He is a bridge between dreams and reality, a
                 testament to the power of curiosity and a grateful student of
@@ -269,8 +380,15 @@
           </div>
           <div class="layout">
             <div class="description">
-              <p class="title">Education and Work Experience</p>
-              <p class="content">
+              <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                Education and Work Experience
+              </p>
+              <p
+                class="content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 Prapun is an alumni of Andhra University, Mrs. A.V.N. College
                 and St Aloysius' Anglo-Indian High School. Worked for Product
                 Clients, Nokia, Reliance, TATA, IBM Daksh and the US
@@ -278,16 +396,33 @@
               </p>
             </div>
             <div class="img">
-              <img src="./assets/images/about-9.png" alt="" />
+              <img
+                src="./assets/images/about-9.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
             </div>
           </div>
           <div class="layout">
             <div class="img">
-              <img src="./assets/images/about-10.png" alt="" />
+              <img
+                src="./assets/images/about-10.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              />
             </div>
             <div class="description">
-              <p class="title">Startup Involvement</p>
-              <p class="content">
+              <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                Startup Involvement
+              </p>
+              <p
+                class="content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 Metaintrospec Innovators Pvt. Ltd, an incubated startup in the
                 Andhra Pradesh Innovation Society(APIS), Visakhapatnam.
               </p>
@@ -299,71 +434,81 @@
       <div id="footer">
         <p class="copyright">&copy; Copyrights reserved by Prapun</p>
         <div class="social-icons">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="21"
-            height="21"
-            viewBox="0 0 21 21"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_31_6211)">
-              <path
-                d="M15.8614 0.5H18.8583L12.3127 8.97115L20.0129 20.5H13.9852L9.26066 13.5096L3.86119 20.5H0.860065L7.85985 11.4375L0.478027 0.5H6.65856L10.9246 6.88942L15.8614 0.5ZM14.8087 18.4712H16.4684L5.7544 2.42308H3.97155L14.8087 18.4712Z"
-                fill="#593018"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_31_6211">
-                <rect
-                  width="19.5349"
-                  height="20"
-                  fill="white"
-                  transform="translate(0.478027 0.5)"
+          <a href="https://twitter.com/PrapunKumar"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_31_6211)">
+                <path
+                  d="M15.8614 0.5H18.8583L12.3127 8.97115L20.0129 20.5H13.9852L9.26066 13.5096L3.86119 20.5H0.860065L7.85985 11.4375L0.478027 0.5H6.65856L10.9246 6.88942L15.8614 0.5ZM14.8087 18.4712H16.4684L5.7544 2.42308H3.97155L14.8087 18.4712Z"
+                  fill="#593018"
                 />
-              </clipPath>
-            </defs>
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="21"
-            viewBox="0 0 22 21"
-            fill="none"
-          >
-            <path
-              d="M5.06899 20H0.921666V6.64732H5.06899V20ZM2.99309 4.82589C1.6672 4.82589 0.591309 3.72768 0.591309 2.40179C0.591309 1.76479 0.844353 1.15389 1.29478 0.703467C1.7452 0.253045 2.3561 0 2.99309 0C3.63009 0 4.24099 0.253045 4.69141 0.703467C5.14184 1.15389 5.39488 1.76479 5.39488 2.40179C5.39488 3.72768 4.31899 4.82589 2.99309 4.82589ZM20.5868 20H16.4485V13.5C16.4485 11.9509 16.4172 9.96429 14.2922 9.96429C12.136 9.96429 11.8056 11.6473 11.8056 13.3884V20H7.66274V6.64732H11.6404V8.46875H11.6985C12.252 7.41964 13.6047 6.3125 15.6226 6.3125C19.819 6.3125 20.5913 9.07589 20.5913 12.6652V20H20.5868Z"
-              fill="#593018"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="21"
-            viewBox="0 0 20 21"
-            fill="none"
-          >
-            <path
-              d="M9.7587 5.14496C6.99376 5.14496 4.76355 7.43437 4.76355 10.2727C4.76355 13.111 6.99376 15.4005 9.7587 15.4005C12.5236 15.4005 14.7539 13.111 14.7539 10.2727C14.7539 7.43437 12.5236 5.14496 9.7587 5.14496ZM9.7587 13.6064C7.97193 13.6064 6.5112 12.1114 6.5112 10.2727C6.5112 8.43404 7.96758 6.939 9.7587 6.939C11.5498 6.939 13.0062 8.43404 13.0062 10.2727C13.0062 12.1114 11.5455 13.6064 9.7587 13.6064ZM16.1233 4.93521C16.1233 5.60016 15.6016 6.13124 14.9582 6.13124C14.3104 6.13124 13.7931 5.5957 13.7931 4.93521C13.7931 4.27471 14.3148 3.73918 14.9582 3.73918C15.6016 3.73918 16.1233 4.27471 16.1233 4.93521ZM19.4316 6.14909C19.3577 4.54694 19.0013 3.12778 17.8579 1.95852C16.7189 0.789273 15.3364 0.423324 13.7757 0.342994C12.1672 0.249275 7.3459 0.249275 5.73737 0.342994C4.181 0.418862 2.79853 0.78481 1.65517 1.95406C0.511803 3.12331 0.159664 4.54248 0.0814109 6.14462C-0.00988435 7.79586 -0.00988435 12.7451 0.0814109 14.3963C0.155317 15.9985 0.511803 17.4176 1.65517 18.5869C2.79853 19.7561 4.17665 20.1221 5.73737 20.2024C7.3459 20.2961 12.1672 20.2961 13.7757 20.2024C15.3364 20.1265 16.7189 19.7606 17.8579 18.5869C18.9969 17.4176 19.3534 15.9985 19.4316 14.3963C19.5229 12.7451 19.5229 7.80032 19.4316 6.14909ZM17.3536 16.1681C17.0145 17.0428 16.358 17.7166 15.5016 18.0692C14.2191 18.5913 11.176 18.4709 9.7587 18.4709C8.34145 18.4709 5.29393 18.5869 4.0158 18.0692C3.16371 17.7211 2.50726 17.0472 2.16381 16.1681C1.65517 14.8515 1.77255 11.7276 1.77255 10.2727C1.77255 8.81783 1.65951 5.68942 2.16381 4.37736C2.50291 3.50265 3.15936 2.82877 4.0158 2.47621C5.29828 1.95406 8.34145 2.07456 9.7587 2.07456C11.176 2.07456 14.2235 1.95852 15.5016 2.47621C16.3537 2.82431 17.0102 3.49819 17.3536 4.37736C17.8622 5.69388 17.7449 8.81783 17.7449 10.2727C17.7449 11.7276 17.8622 14.856 17.3536 16.1681Z"
-              fill="#593018"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="21"
-            viewBox="0 0 12 21"
-            fill="none"
-          >
-            <path
-              d="M3.48886 12.1068V20H7.86321V12.1068H11.1251L11.8039 8.47754H7.86321V7.19355C7.86321 5.275 8.62873 4.54023 10.6047 4.54023C11.2194 4.54023 11.7134 4.55508 12 4.58477V1.29316C11.4607 1.14844 10.1409 1 9.37916 1C5.34796 1 3.48886 2.87402 3.48886 6.91523V8.47754H1V12.1068H3.48886Z"
-              fill="#593018"
-            />
-          </svg>
+              </g>
+              <defs>
+                <clipPath id="clip0_31_6211">
+                  <rect
+                    width="19.5349"
+                    height="20"
+                    fill="white"
+                    transform="translate(0.478027 0.5)"
+                  />
+                </clipPath>
+              </defs></svg
+          ></a>
+          <a href="https://www.linkedin.com/in/prapunkumar"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="21"
+              viewBox="0 0 22 21"
+              fill="none"
+            >
+              <path
+                d="M5.06899 20H0.921666V6.64732H5.06899V20ZM2.99309 4.82589C1.6672 4.82589 0.591309 3.72768 0.591309 2.40179C0.591309 1.76479 0.844353 1.15389 1.29478 0.703467C1.7452 0.253045 2.3561 0 2.99309 0C3.63009 0 4.24099 0.253045 4.69141 0.703467C5.14184 1.15389 5.39488 1.76479 5.39488 2.40179C5.39488 3.72768 4.31899 4.82589 2.99309 4.82589ZM20.5868 20H16.4485V13.5C16.4485 11.9509 16.4172 9.96429 14.2922 9.96429C12.136 9.96429 11.8056 11.6473 11.8056 13.3884V20H7.66274V6.64732H11.6404V8.46875H11.6985C12.252 7.41964 13.6047 6.3125 15.6226 6.3125C19.819 6.3125 20.5913 9.07589 20.5913 12.6652V20H20.5868Z"
+                fill="#593018"
+              /></svg
+          ></a>
+          <a href="https://www.instagram.com/prapunkumar/"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+            >
+              <path
+                d="M9.7587 5.14496C6.99376 5.14496 4.76355 7.43437 4.76355 10.2727C4.76355 13.111 6.99376 15.4005 9.7587 15.4005C12.5236 15.4005 14.7539 13.111 14.7539 10.2727C14.7539 7.43437 12.5236 5.14496 9.7587 5.14496ZM9.7587 13.6064C7.97193 13.6064 6.5112 12.1114 6.5112 10.2727C6.5112 8.43404 7.96758 6.939 9.7587 6.939C11.5498 6.939 13.0062 8.43404 13.0062 10.2727C13.0062 12.1114 11.5455 13.6064 9.7587 13.6064ZM16.1233 4.93521C16.1233 5.60016 15.6016 6.13124 14.9582 6.13124C14.3104 6.13124 13.7931 5.5957 13.7931 4.93521C13.7931 4.27471 14.3148 3.73918 14.9582 3.73918C15.6016 3.73918 16.1233 4.27471 16.1233 4.93521ZM19.4316 6.14909C19.3577 4.54694 19.0013 3.12778 17.8579 1.95852C16.7189 0.789273 15.3364 0.423324 13.7757 0.342994C12.1672 0.249275 7.3459 0.249275 5.73737 0.342994C4.181 0.418862 2.79853 0.78481 1.65517 1.95406C0.511803 3.12331 0.159664 4.54248 0.0814109 6.14462C-0.00988435 7.79586 -0.00988435 12.7451 0.0814109 14.3963C0.155317 15.9985 0.511803 17.4176 1.65517 18.5869C2.79853 19.7561 4.17665 20.1221 5.73737 20.2024C7.3459 20.2961 12.1672 20.2961 13.7757 20.2024C15.3364 20.1265 16.7189 19.7606 17.8579 18.5869C18.9969 17.4176 19.3534 15.9985 19.4316 14.3963C19.5229 12.7451 19.5229 7.80032 19.4316 6.14909ZM17.3536 16.1681C17.0145 17.0428 16.358 17.7166 15.5016 18.0692C14.2191 18.5913 11.176 18.4709 9.7587 18.4709C8.34145 18.4709 5.29393 18.5869 4.0158 18.0692C3.16371 17.7211 2.50726 17.0472 2.16381 16.1681C1.65517 14.8515 1.77255 11.7276 1.77255 10.2727C1.77255 8.81783 1.65951 5.68942 2.16381 4.37736C2.50291 3.50265 3.15936 2.82877 4.0158 2.47621C5.29828 1.95406 8.34145 2.07456 9.7587 2.07456C11.176 2.07456 14.2235 1.95852 15.5016 2.47621C16.3537 2.82431 17.0102 3.49819 17.3536 4.37736C17.8622 5.69388 17.7449 8.81783 17.7449 10.2727C17.7449 11.7276 17.8622 14.856 17.3536 16.1681Z"
+                fill="#593018"
+              /></svg
+          ></a>
+          <a href="https://www.facebook.com/prapunkumarillapani"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="21"
+              viewBox="0 0 12 21"
+              fill="none"
+            >
+              <path
+                d="M3.48886 12.1068V20H7.86321V12.1068H11.1251L11.8039 8.47754H7.86321V7.19355C7.86321 5.275 8.62873 4.54023 10.6047 4.54023C11.2194 4.54023 11.7134 4.55508 12 4.58477V1.29316C11.4607 1.14844 10.1409 1 9.37916 1C5.34796 1 3.48886 2.87402 3.48886 6.91523V8.47754H1V12.1068H3.48886Z"
+                fill="#593018"
+              /></svg
+          ></a>
         </div>
       </div>
     </div>
 
-    <script src="./script.js"></script>
-    <script type="module" src="./firebase.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/firebase-script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>

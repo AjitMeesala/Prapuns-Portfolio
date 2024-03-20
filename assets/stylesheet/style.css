@@ -111,8 +111,10 @@ nav {
     }
   }
 
-  & .mobile-menu {
-    display: none;
+  @media screen and (min-width: 768px) {
+    .mobile-menu {
+      display: none !important;
+    }
   }
 }
 
@@ -201,10 +203,10 @@ nav {
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.4) 100%
     ),
-    url(./assets/images/home-bg.png); */
-  background-image: url(./assets/images/home-bg.png);
+    url(.././images/home-bg.png); */
+  background-image: url(.././images/home-bg.png);
   background-position-x: right;
-  background-position-y: top;
+  background-position-y: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -223,7 +225,7 @@ nav {
 
 @media screen and (max-width: 768px) {
   #banner {
-    background-image: url(./assets/images/home-bg-mobile.png);
+    background-image: url(.././images/home-bg-mobile.png);
     width: 100%;
     height: 45rem;
   }
@@ -679,37 +681,37 @@ nav {
       }
 
       & .card:nth-child(1) {
-        background: url(./assets/gallery/gmrit.png) no-repeat center center /
+        background: url(.././gallery/gmrit.png) no-repeat center center /
           cover;
         background-position: right;
       }
 
       & .card:nth-child(2) {
-        background: url(./assets/gallery/anits.png) no-repeat center center /
+        background: url(.././gallery/anits.png) no-repeat center center /
           cover;
         background-position: left;
       }
 
       & .card:nth-child(3) {
-        background: url(./assets/gallery/KITS.png) no-repeat center center /
+        background: url(.././gallery/KITS.png) no-repeat center center /
           cover;
         background-position: right;
       }
 
       & .card:nth-child(4) {
-        background: url(./assets/gallery/Avanthi.png) no-repeat center center /
+        background: url(.././gallery/Avanthi.png) no-repeat center center /
           cover;
         background-position: center;
       }
 
       & .card:nth-child(5) {
-        background: url(./assets/gallery/Ceremony.png) no-repeat center center /
+        background: url(.././gallery/Ceremony.png) no-repeat center center /
           cover;
         background-position: center;
       }
 
       & .card:nth-child(6) {
-        background: url(./assets/gallery/School.png) no-repeat center center /
+        background: url(.././gallery/School.png) no-repeat center center /
           cover;
         background-position: left;
       }
@@ -821,21 +823,21 @@ nav {
 
       & .card:nth-child(1) {
         & .testimonial-img {
-          background: url(./assets/testimonial_images/Sample.jpg) no-repeat
+          background: url(.././testimonial_images/Sample.jpg) no-repeat
             center center / cover;
         }
       }
 
       & .card:nth-child(2) {
         & .testimonial-img {
-          background: url(./assets/testimonial_images/Sample.jpg) no-repeat
+          background: url(.././testimonial_images/Sample.jpg) no-repeat
             center center / cover;
         }
       }
 
       & .card:nth-child(3) {
         & .testimonial-img {
-          background: url(./assets/testimonial_images/Sample.jpg) no-repeat
+          background: url(.././testimonial_images/Sample.jpg) no-repeat
             center center / cover;
         }
       }
@@ -888,7 +890,7 @@ nav {
       width: 56.5rem;
       height: 16.625rem;
       flex-shrink: 0;
-      /* background: url(./assets/gallery/colleges.png) no-repeat center center /
+      /* background: url(.././gallery/colleges.png) no-repeat center center /
         cover; */
 
       & .clg-mobile {
@@ -1075,20 +1077,25 @@ nav {
   left: 0;
   right: 0;
   margin-inline: auto;
-  background: linear-gradient(
+  /* background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.4) 100%
     ),
-    url(./assets/images/about-bg.png) lightgray -0.061px 0.003px / cover no-repeat;
+    url(.././images/about-bg.png) lightgray -0.061px 0.003px / cover no-repeat; */
+  background-image: url(.././images/about-bg.png);
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
-  #banner {
+  /* #banner {
     background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0.4) 100%
       ),
-      url(./assets/images/home-bg.png) lightgray 50% / cover no-repeat;
+      url(.././images/home-bg.png) lightgray 50% / cover no-repeat;
     position: absolute;
     left: 0;
     right: 0;
@@ -1096,7 +1103,7 @@ nav {
     width: 85.375rem;
     height: 40.8125rem;
     z-index: -1;
-  }
+  } */
 }
 
 #about-wrapper {
@@ -1119,6 +1126,14 @@ nav {
 
     & .heading-container {
       width: 37.5rem;
+
+      & .mobile-text {
+        display: none;
+      }
+
+      & .desktop-text {
+        display: block;
+      }
 
       & h2 {
         color: #fff;
@@ -1173,7 +1188,7 @@ nav {
             font-family: "PT Sans";
             font-size: 1rem;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 600;
             line-height: normal;
           }
         }
@@ -1190,7 +1205,6 @@ nav {
 
     & .copyright {
       display: flex;
-      width: 46.5rem;
       align-items: center;
       gap: 1.5625rem;
 
@@ -1254,7 +1268,7 @@ nav {
     }
 
     & #home {
-      height: 44rem;
+      height: 42rem;
       padding: 11.25rem 0rem 1.25rem 0rem;
       justify-content: flex-end;
       gap: 1rem;
@@ -1458,19 +1472,16 @@ nav {
 
       & .college-img {
         align-self: stretch;
-        height: 50rem;
+        height: fit-content;
         width: 100%;
         display: flex;
         justify-content: center;
-        /* background: url(./assets/gallery/colleges-mobile.png) no-repeat center
+        /* background: url(.././gallery/colleges-mobile.png) no-repeat center
           center / cover; */
 
         & .clg-mobile {
           display: block;
-
-          & img {
-            width: 100em;
-          }
+          width: 100%;
         }
 
         & .clg-desktop {
@@ -1512,8 +1523,10 @@ nav {
     /* width: 26.875rem; */
     width: 100%;
     height: 40.6875rem;
-    background-image: url(./assets/images/about-bg-mobile.png);
+    background-image: url(.././images/about-bg-mobile.png);
     background-size: cover;
+    background-position-x: right;
+    background-position: top;
     background-repeat: no-repeat;
   }
 
@@ -1532,6 +1545,14 @@ nav {
         gap: 0.625rem;
         align-self: stretch;
 
+        & .mobile-text {
+          display: block;
+        }
+
+        & .desktop-text {
+          display: none;
+        }
+
         & h2 {
           font-size: 2rem;
         }
@@ -1543,8 +1564,24 @@ nav {
         & .layout {
           flex-direction: column;
           gap: 0.625rem;
+
+          & .img > img {
+            width: 100%;
+          }
+
+          & .description {
+            align-self: stretch;
+          }
+        }
+
+        & .layout:nth-child(odd) {
+          flex-direction: column-reverse;
         }
       }
+    }
+
+    & #footer > .copyright {
+      font-size: 0.7rem;
     }
   }
 }
