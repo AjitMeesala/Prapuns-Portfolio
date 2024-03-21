@@ -18,15 +18,22 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 body {
   overflow-x: hidden;
 }
 
 nav {
   display: flex;
-  width: 85.375rem;
+  /* width: 85.375rem; */
   /* width: 100%; */
-  padding: 1.5625rem 14.4375rem 0.3125rem 14.4375rem;
+  max-width: 61.38rem;
+  width: 100%;
+  /* padding: 1.5625rem 14.4375rem 0.3125rem 14.4375rem; */
+  padding: 1.5625rem 2.5rem 0.3125rem 2.5rem;
   justify-content: space-between;
   align-items: center;
   position: absolute;
@@ -118,85 +125,6 @@ nav {
   }
 }
 
-@media screen and (max-width: 768px) {
-  nav {
-    padding: 2.1875rem 1.25rem 1.25rem 1.25rem;
-    width: 100vw;
-    /* width: 26.875rem; */
-    display: flex;
-    flex-direction: column;
-
-    & .nav-container {
-      & ul {
-        display: none;
-      }
-
-      & .social-icons {
-        display: none;
-      }
-
-      & .hamburger-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.25rem;
-
-        & #pencet {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          cursor: pointer;
-        }
-
-        & #pencet span {
-          background-color: white;
-          width: 2em;
-          height: 0.2em;
-          margin: 0.26em 0;
-          display: block;
-          transition: all 0.4s ease;
-          transform-origin: 0 0;
-        }
-
-        & .Diam span:nth-child(1) {
-          transform: rotate(45deg) translate(1px, -1px);
-        }
-
-        & .Diam span:nth-child(2) {
-          transform: scaleX(0);
-        }
-
-        & .Diam span:nth-child(3) {
-          transform: rotate(-45deg) translate(1px, 0);
-        }
-      }
-    }
-
-    & .mobile-menu {
-      display: none;
-      align-self: flex-end;
-
-      & ul {
-        list-style-type: none;
-
-        & li {
-          text-align: center;
-          padding: 0.75rem 0rem;
-          border-bottom: 1px solid #fff;
-
-          & a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            font-family: "PT Sans";
-            font-size: 1.25rem;
-          }
-        }
-      }
-    }
-  }
-}
-
 #banner {
   /* background: linear-gradient(
       0deg,
@@ -223,19 +151,14 @@ nav {
   align-self: center;
 }
 
-@media screen and (max-width: 768px) {
-  #banner {
-    background-image: url(.././images/home-bg-mobile.png);
-    width: 100%;
-    height: 45rem;
-  }
-}
-
 #wrapper {
   display: flex;
-  width: 85.375rem;
+  /* width: 85.375rem; */
   /* width: 100%; */
-  padding: 1.25rem 14.4375rem;
+  max-width: 61.38rem;
+  width: 100%;
+  /* padding: 1.25rem 14.4375rem; */
+  padding: 1.25rem 2.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -388,7 +311,9 @@ nav {
         align-self: stretch;
 
         & svg {
-          height: 12.375rem;
+          /* height: 12.375rem; */
+          height: auto;
+          width: 100%;
           align-self: stretch;
         }
 
@@ -469,35 +394,47 @@ nav {
       flex: 1 0 0;
       align-self: stretch;
       flex-wrap: wrap;
+      width: 60%;
 
-      & .card {
+      & .row {
         display: flex;
-        width: 16.75rem;
-        height: 14.4375rem;
-        flex: 1 0 0;
-        padding: 0.625rem;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
         gap: 1.25rem;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        width: 100%;
 
-        & svg {
-          height: 12.375rem;
-          /* flex: 1 0 0; */
-          align-self: stretch;
-        }
+        & .card {
+          display: flex;
+          width: 16.75rem;
+          height: 14.4375rem;
+          flex: 1 0 0;
+          padding: 0.625rem;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.25rem;
 
-        & p {
-          align-self: stretch;
-          color: var(--Primary-Two, #593018);
+          & svg {
+            width: 100%;
+            height: auto;
+            /* height: 12.375rem; */
+            /* flex: 1 0 0; */
+            align-self: stretch;
+          }
 
-          /* Text */
-          -webkit-text-stroke-width: 1;
-          -webkit-text-stroke-color: var(--Secondary-Two, #d5e5f2);
-          font-family: "PT Sans";
-          font-size: 1rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
+          & p {
+            align-self: stretch;
+            color: var(--Primary-Two, #593018);
+
+            /* Text */
+            -webkit-text-stroke-width: 1;
+            -webkit-text-stroke-color: var(--Secondary-Two, #d5e5f2);
+            font-family: "PT Sans";
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
         }
       }
     }
@@ -518,55 +455,70 @@ nav {
       flex: 1 0 0;
       align-self: stretch;
       flex-wrap: wrap;
+      width: 60%;
 
-      & .card {
+      & .row {
         display: flex;
-        width: 16.75rem;
-        padding: 0.625rem;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 1.25rem;
+        flex-wrap: nowrap;
         align-items: flex-start;
-        gap: 0.625rem;
         align-self: stretch;
+        width: 100%;
 
-        & svg {
-          flex: 1 0 0;
+        & .card {
+          display: flex;
+          width: 16.75rem;
+          height: 14.4375rem;
+          padding: 0.625rem;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.625rem;
           align-self: stretch;
+
+          & svg {
+            /* flex: 1 0 0; */
+            align-self: stretch;
+            width: 100%;
+            height: auto;
+          }
+
+          & p {
+            align-self: stretch;
+            color: var(--Primary-Two, #593018);
+
+            /* Text */
+            font-family: "PT Sans";
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
         }
 
-        & p {
+        & .card-temp {
+          background: var(--Secondary-Two, #d5e5f2);
+          display: flex;
+          width: 16.75rem;
+          height: 14.4375rem;
+          padding: 0.625rem;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+          gap: 0.625rem;
           align-self: stretch;
-          color: var(--Primary-Two, #593018);
 
-          /* Text */
-          font-family: "PT Sans";
-          font-size: 1rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-        }
-      }
+          & p {
+            align-self: stretch;
+            color: var(--Primary-Two, #593018);
 
-      & .card-temp {
-        background: var(--Secondary-Two, #d5e5f2);
-        display: flex;
-        width: 16.75rem;
-        padding: 0.625rem;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        gap: 0.625rem;
-        align-self: stretch;
-
-        & p {
-          align-self: stretch;
-          color: var(--Primary-Two, #593018);
-
-          /* Text */
-          font-family: "PT Sans";
-          font-size: 1rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
+            /* Text */
+            font-family: "PT Sans";
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
         }
       }
     }
@@ -681,27 +633,28 @@ nav {
       }
 
       & .card:nth-child(1) {
-        background: url(.././gallery/gmrit.png) no-repeat center center /
-          cover;
-        background-position: right;
+        background: url(.././gallery/gmrit.png) no-repeat center center / cover;
+        background-position-x: right;
+        background-position-y: top;
       }
 
       & .card:nth-child(2) {
-        background: url(.././gallery/anits.png) no-repeat center center /
-          cover;
-        background-position: left;
+        background: url(.././gallery/anits.png) no-repeat center center / cover;
+        background-position-x: left;
+        background-position-y: top;
       }
 
       & .card:nth-child(3) {
-        background: url(.././gallery/KITS.png) no-repeat center center /
-          cover;
-        background-position: right;
+        background: url(.././gallery/KITS.png) no-repeat center center / cover;
+        background-position-x: right;
+        background-position-y: top;
       }
 
       & .card:nth-child(4) {
         background: url(.././gallery/Avanthi.png) no-repeat center center /
           cover;
-        background-position: center;
+        background-position-x: center;
+        background-position-y: top;
       }
 
       & .card:nth-child(5) {
@@ -711,9 +664,9 @@ nav {
       }
 
       & .card:nth-child(6) {
-        background: url(.././gallery/School.png) no-repeat center center /
-          cover;
-        background-position: left;
+        background: url(.././gallery/School.png) no-repeat center center / cover;
+        background-position-x: left;
+        background-position-y: top;
       }
     }
   }
@@ -807,7 +760,6 @@ nav {
           }
 
           & .author {
-            max-width: 24.05938rem;
             align-self: stretch;
             color: var(--Primary-Two, #593018);
             text-align: center;
@@ -823,22 +775,22 @@ nav {
 
       & .card:nth-child(1) {
         & .testimonial-img {
-          background: url(.././testimonial_images/Sample.jpg) no-repeat
-            center center / cover;
+          background: url(.././testimonial_images/Sample.jpg) no-repeat center
+            center / cover;
         }
       }
 
       & .card:nth-child(2) {
         & .testimonial-img {
-          background: url(.././testimonial_images/Sample.jpg) no-repeat
-            center center / cover;
+          background: url(.././testimonial_images/Sample.jpg) no-repeat center
+            center / cover;
         }
       }
 
       & .card:nth-child(3) {
         & .testimonial-img {
-          background: url(.././testimonial_images/Sample.jpg) no-repeat
-            center center / cover;
+          background: url(.././testimonial_images/Sample.jpg) no-repeat center
+            center / cover;
         }
       }
     }
@@ -858,7 +810,8 @@ nav {
 
   & #colleges {
     display: flex;
-    height: 38.3125rem;
+    /* height: 38.3125rem; */
+    height: auto;
     padding: 6.25rem 0rem 1.875rem 0rem;
     flex-direction: column;
     align-items: flex-start;
@@ -887,8 +840,9 @@ nav {
     }
 
     & .college-img {
-      width: 56.5rem;
-      height: 16.625rem;
+      /* width: 56.5rem; */
+      width: 100%;
+      /* height: 16.625rem; */
       flex-shrink: 0;
       /* background: url(.././gallery/colleges.png) no-repeat center center /
         cover; */
@@ -899,6 +853,7 @@ nav {
 
       & .clg-desktop {
         display: block;
+        width: 100%;
       }
     }
   }
@@ -1071,7 +1026,7 @@ nav {
 
 #about-banner {
   /* width: 85.375rem; */
-  width: 100vw;
+  width: 100%;
   height: 24.5rem;
   position: absolute;
   left: 0;
@@ -1108,8 +1063,11 @@ nav {
 
 #about-wrapper {
   display: flex;
-  width: 85.375rem;
-  padding: 1.25rem 14.4375rem;
+  /* width: 85.375rem; */
+  max-width: 61.38rem;
+  width: 100%;
+  /* padding: 1.25rem 14.4375rem; */
+  padding: 1.25rem 2.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -1255,6 +1213,89 @@ nav {
     overflow-x: hidden;
   }
 
+  nav {
+    padding: 2.1875rem 1.25rem 1.25rem 1.25rem;
+    width: 100%;
+    /* width: 26.875rem; */
+    display: flex;
+    flex-direction: column;
+
+    & .nav-container {
+      & ul {
+        display: none;
+      }
+
+      & .social-icons {
+        display: none;
+      }
+
+      & .hamburger-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+
+        & #pencet {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          cursor: pointer;
+        }
+
+        & #pencet span {
+          background-color: white;
+          width: 2em;
+          height: 0.2em;
+          margin: 0.26em 0;
+          display: block;
+          transition: all 0.4s ease;
+          transform-origin: 0 0;
+        }
+
+        & .Diam span:nth-child(1) {
+          transform: rotate(45deg) translate(1px, -1px);
+        }
+
+        & .Diam span:nth-child(2) {
+          transform: scaleX(0);
+        }
+
+        & .Diam span:nth-child(3) {
+          transform: rotate(-45deg) translate(1px, 0);
+        }
+      }
+    }
+
+    & .mobile-menu {
+      display: none;
+      align-self: flex-end;
+
+      & ul {
+        list-style-type: none;
+
+        & li {
+          text-align: center;
+          padding: 0.75rem 0rem;
+          border-bottom: 1px solid #fff;
+
+          & a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: "PT Sans";
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  #banner {
+    background-image: url(.././images/home-bg-mobile.png);
+    width: 100%;
+    height: 45rem;
+  }
+
   #wrapper {
     /* width: 26.875rem; */
     width: 100%;
@@ -1315,6 +1356,7 @@ nav {
         flex-direction: column;
         align-items: center;
         flex: 0;
+        overflow-x: hidden;
 
         & .card {
           flex: 0;
@@ -1353,17 +1395,23 @@ nav {
         align-items: center;
         flex: 0;
         flex-wrap: nowrap;
+        width: 100%;
 
-        & .card {
-          width: auto;
-          height: auto;
-          align-self: stretch;
-          flex: 0;
+        & .row {
+          flex-direction: column;
+          width: 100%;
 
-          & svg {
-            height: auto;
+          & .card {
             width: auto;
+            height: auto;
             align-self: stretch;
+            flex: 0;
+
+            & svg {
+              height: auto;
+              width: auto;
+              align-self: stretch;
+            }
           }
         }
       }
@@ -1377,24 +1425,31 @@ nav {
 
       & .cards-container {
         flex-direction: column;
-        flex-direction: column;
         flex: 0;
         flex-wrap: nowrap;
+        width: 100%;
 
-        & .card {
-          width: auto;
+        & .row {
+          flex-direction: column;
+          width: 100%;
 
-          & svg {
-            flex: 0;
-            height: auto;
+          & .card {
             width: auto;
+            height: auto;
             align-self: stretch;
-          }
-        }
 
-        & .card-temp {
-          width: auto;
-          height: 22rem;
+            & svg {
+              flex: 0;
+              height: auto;
+              width: auto;
+              align-self: stretch;
+            }
+          }
+
+          & .card-temp {
+            width: auto;
+            height: 22rem;
+          }
         }
       }
 
@@ -1502,16 +1557,25 @@ nav {
         flex-direction: column;
         gap: 3.125rem;
         align-self: center;
+        width: 100%;
+
+        & form {
+          width: 100%;
+        }
+
+        & iframe {
+          width: 100%;
+        }
       }
-    }
 
-    & #footer {
-      & .copyright {
-        gap: 0.625rem;
-        font-size: 0.7rem;
-
-        & .social-icons {
+      & #footer {
+        & .copyright {
           gap: 0.625rem;
+          font-size: 0.7rem;
+
+          & .social-icons {
+            gap: 0.625rem;
+          }
         }
       }
     }
