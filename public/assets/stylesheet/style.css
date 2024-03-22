@@ -69,7 +69,7 @@ nav {
         font-family: "PT Sans";
         font-size: 1rem;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 200;
         line-height: normal;
 
         & a {
@@ -289,7 +289,7 @@ nav {
         font-family: "PT Sans";
         font-size: 1rem;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 200;
         line-height: normal;
       }
     }
@@ -319,13 +319,14 @@ nav {
 
         & p {
           align-self: stretch;
+          text-align: center;
           color: var(--Primary-Two, #593018);
 
           /* Text */
           font-family: "PT Sans";
           font-size: 1rem;
           font-style: normal;
-          font-weight: 700;
+          font-weight: 200;
           line-height: normal;
         }
       }
@@ -381,7 +382,7 @@ nav {
         font-family: "PT Sans";
         font-size: 1rem;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 200;
         line-height: normal;
       }
     }
@@ -424,6 +425,7 @@ nav {
 
           & p {
             align-self: stretch;
+            text-align: center;
             color: var(--Primary-Two, #593018);
 
             /* Text */
@@ -432,7 +434,7 @@ nav {
             font-family: "PT Sans";
             font-size: 1rem;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 200;
             line-height: normal;
           }
         }
@@ -485,13 +487,14 @@ nav {
 
           & p {
             align-self: stretch;
+            text-align: center;
             color: var(--Primary-Two, #593018);
 
             /* Text */
             font-family: "PT Sans";
             font-size: 1rem;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 200;
             line-height: normal;
           }
         }
@@ -551,7 +554,7 @@ nav {
         font-family: "PT Sans";
         font-size: 1rem;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 200;
         line-height: normal;
       }
     }
@@ -673,7 +676,7 @@ nav {
 
   & #testimonials {
     display: flex;
-    height: 38.3125rem;
+    /* height: 38.3125rem; */
     padding: 6.25rem 0rem 1.875rem 0rem;
     flex-direction: column;
     align-items: flex-start;
@@ -708,7 +711,7 @@ nav {
 
         /* Text */
         font-family: "PT Sans";
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -727,7 +730,7 @@ nav {
         width: 18rem;
         padding: 1.875rem 0.625rem;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 0.625rem;
         align-items: center;
         align-self: stretch;
         border-radius: 0.3125rem;
@@ -743,7 +746,9 @@ nav {
         & .testimonial-container {
           display: flex;
           flex-direction: column;
+          justify-content: space-between;
           align-items: center;
+          flex: 1 0 0;
           gap: 0.9375rem;
           align-self: stretch;
 
@@ -755,7 +760,7 @@ nav {
             font-family: "PT Sans";
             font-size: 1rem;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 200;
             line-height: normal;
           }
 
@@ -767,7 +772,7 @@ nav {
             font-family: "PT Sans";
             font-size: 1rem;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 200;
             line-height: normal;
           }
         }
@@ -775,21 +780,21 @@ nav {
 
       & .card:nth-child(1) {
         & .testimonial-img {
-          background: url(.././testimonial_images/Sample.jpg) no-repeat center
-            center / cover;
+          background: url(.././testimonial_images/saikiran.jpeg) no-repeat
+            center center / cover;
         }
       }
 
       & .card:nth-child(2) {
         & .testimonial-img {
-          background: url(.././testimonial_images/Sample.jpg) no-repeat center
-            center / cover;
+          background: url(.././testimonial_images/lalitendra.jpeg) no-repeat
+            center center / cover;
         }
       }
 
       & .card:nth-child(3) {
         & .testimonial-img {
-          background: url(.././testimonial_images/Sample.jpg) no-repeat center
+          background: url(.././testimonial_images/ajit.jpeg) no-repeat center
             center / cover;
         }
       }
@@ -985,9 +990,9 @@ nav {
 
       /* Text */
       font-family: "PT Sans";
-      font-size: 1rem;
+      font-size: 0.75rem;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 200;
       line-height: normal;
     }
 
