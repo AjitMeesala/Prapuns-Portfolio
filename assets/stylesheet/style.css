@@ -134,7 +134,7 @@ nav {
     url(.././images/home-bg.png); */
   background-image: url(.././images/home-bg.png);
   background-position-x: right;
-  background-position-y: center;
+  background-position-y: top;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
