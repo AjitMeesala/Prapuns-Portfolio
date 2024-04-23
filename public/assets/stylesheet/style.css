@@ -56,7 +56,8 @@ nav {
 
     & ul {
       display: flex;
-      width: 21.5rem;
+      /* width: 21.5rem; */
+      gap: 3.25rem;
       justify-content: space-between;
       align-items: center;
       flex-shrink: 0;
@@ -80,7 +81,7 @@ nav {
     }
 
     & .social-icons {
-      display: flex;
+      display: none;
       align-items: center;
       gap: 1.5625rem;
 
