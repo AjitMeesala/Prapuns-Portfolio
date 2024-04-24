@@ -30,7 +30,8 @@ nav {
   display: flex;
   /* width: 85.375rem; */
   /* width: 100%; */
-  max-width: 61.38rem;
+  /* max-width: 61.38rem; */
+  max-width: 71.38rem;  
   width: 100%;
   /* padding: 1.5625rem 14.4375rem 0.3125rem 14.4375rem; */
   padding: 1.5625rem 2.5rem 0.3125rem 2.5rem;
@@ -156,7 +157,8 @@ nav {
   display: flex;
   /* width: 85.375rem; */
   /* width: 100%; */
-  max-width: 61.38rem;
+  /* max-width: 61.38rem; */
+  max-width: 71.38rem;
   width: 100%;
   /* padding: 1.25rem 14.4375rem; */
   padding: 1.25rem 2.5rem;
@@ -478,6 +480,7 @@ nav {
           align-items: flex-start;
           gap: 0.625rem;
           align-self: stretch;
+          flex: 1 0 0;
 
           & svg {
             /* flex: 1 0 0; */
@@ -722,6 +725,7 @@ nav {
     & .cards-container {
       display: flex;
       align-items: flex-start;
+      justify-content: center;
       gap: 1.25rem;
       flex: 1 0 0;
       align-self: stretch;
@@ -1445,7 +1449,7 @@ nav {
             align-self: stretch;
 
             & svg {
-              flex: 0;
+              /* flex: 0; */
               height: auto;
               width: auto;
               align-self: stretch;
